@@ -110,7 +110,7 @@ def delete_chat_session(chat_id):
 if __name__ == '__main__':
     os.makedirs('static', exist_ok=True)
     os.makedirs('templates', exist_ok=True)
-    print("✅ Flask is running...")
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000)) 
+    app.run(host='0.0.0.0', port=port)        
 
 
