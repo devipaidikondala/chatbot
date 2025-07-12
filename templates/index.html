@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="title-box">
+      <h1 class="title">🌟 Devi Chatbot</h1>
+    </div>
+    <button class="theme-toggle" id="theme-toggle"></button>
+  </header>
+
+  <!-- Main layout -->
+  <div class="layout">
+    <!-- Chat area -->
+    <section class="chat-area">
+      <div id="chat-box" class="chat-box"></div>
+      <form class="input-area" id="chat-form">
+        <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off" />
+        <button type="submit" id="send-btn">📨</button>
+      </form>
+    </section>
+
+    <!-- Sidebar / History -->
+    <aside class="history-panel">
+      <div class="history-header">
+        <h2>📜 Chat history</h2>
+        <button id="new-chat-btn">➕ New</button>
+      </div>
+      <div id="chat-history" class="chat-history"></div>
+    </aside>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/script.js"></script>
+</body>
+</html>
